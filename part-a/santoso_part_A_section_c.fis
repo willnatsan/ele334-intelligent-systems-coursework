@@ -1,5 +1,5 @@
 [System]
-Name='santoso_part_A_section_b'
+Name='santoso_part_A_section_c'
 Type='mamdani'
 Version=2.0
 NumInputs=2
@@ -15,31 +15,31 @@ DefuzzMethod='centroid'
 Name='Error'
 Range=[-1 1]
 NumMFs=5
-MF1='NB':'gaussmf',[0.15 -0.6]
-MF2='N':'gaussmf',[0.15 -0.3]
-MF3='Z':'gaussmf',[0.15 0]
-MF4='P':'gaussmf',[0.15 0.3]
-MF5='PB':'gaussmf',[0.15 0.6]
+MF1='NB':'gaussmf',[0.2 -1]
+MF2='N':'gaussmf',[0.15 -0.5]
+MF3='Z':'gaussmf',[0.25 0]
+MF4='P':'gaussmf',[0.15 0.5]
+MF5='PB':'gaussmf',[0.2 1]
 
 [Input2]
 Name='Rate'
 Range=[-1 1]
 NumMFs=5
-MF1='NB':'gaussmf',[0.15 -0.6]
-MF2='N':'gaussmf',[0.15 -0.3]
-MF3='Z':'gaussmf',[0.15 0]
-MF4='P':'gaussmf',[0.15 0.3]
-MF5='PB':'gaussmf',[0.15 0.6]
+MF1='NB':'gaussmf',[0.2 -1]
+MF2='N':'gaussmf',[0.15 -0.5]
+MF3='Z':'gaussmf',[0.25 0]
+MF4='P':'gaussmf',[0.15 0.5]
+MF5='PB':'gaussmf',[0.2 1]
 
 [Output1]
 Name='Drug_Input'
 Range=[0 1.3]
 NumMFs=5
-MF1='NB':'gaussmf',[0.2 0]
-MF2='N':'gaussmf',[0.2 0.32]
-MF3='Z':'gaussmf',[0.2 0.643]
-MF4='P':'gaussmf',[0.2 0.96]
-MF5='PB':'gaussmf',[0.2 1.28]
+MF1='NB':'gaussmf',[0.15 0]
+MF2='N':'gaussmf',[0.1 0.32]
+MF3='Z':'gaussmf',[0.08 0.643]
+MF4='P':'gaussmf',[0.1 0.96]
+MF5='PB':'gaussmf',[0.15 1.28]
 
 [Rules]
 1 1, 1 (1) : 1
@@ -49,7 +49,7 @@ MF5='PB':'gaussmf',[0.2 1.28]
 1 5, 3 (1) : 1
 2 1, 1 (1) : 1
 2 2, 1 (1) : 1
-2 3, 2 (1) : 1
+2 3, 1 (1) : 1
 2 4, 3 (1) : 1
 2 5, 4 (1) : 1
 3 1, 1 (1) : 1
@@ -59,7 +59,7 @@ MF5='PB':'gaussmf',[0.2 1.28]
 3 5, 5 (1) : 1
 4 1, 2 (1) : 1
 4 2, 3 (1) : 1
-4 3, 4 (1) : 1
+4 3, 5 (1) : 1
 4 4, 5 (1) : 1
 4 5, 5 (1) : 1
 5 1, 3 (1) : 1
