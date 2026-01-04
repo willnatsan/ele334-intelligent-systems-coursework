@@ -17,7 +17,7 @@ Range=[-1 1]
 NumMFs=5
 MF1='NB':'gaussmf',[0.15 -0.6]
 MF2='N':'gaussmf',[0.15 -0.3]
-MF3='Z':'gaussmf',[0.08 0]
+MF3='Z':'gaussmf',[0.15 0]
 MF4='P':'gaussmf',[0.15 0.3]
 MF5='PB':'gaussmf',[0.15 0.6]
 
@@ -33,13 +33,13 @@ MF5='PB':'gaussmf',[0.15 0.6]
 
 [Output1]
 Name='Drug_Input'
-Range=[-1 1]
+Range=[0 1.3]
 NumMFs=5
-MF1='NB':'gaussmf',[0.2 -1]
-MF2='N':'gaussmf',[0.2 -0.5]
-MF3='Z':'gaussmf',[0.2 0]
-MF4='P':'gaussmf',[0.2 0.5]
-MF5='PB':'gaussmf',[0.2 1]
+MF1='NB':'gaussmf',[0.2 0]
+MF2='N':'gaussmf',[0.2 0.32]
+MF3='Z':'gaussmf',[0.2 0.643]
+MF4='P':'gaussmf',[0.2 0.96]
+MF5='PB':'gaussmf',[0.2 1.28]
 
 [Rules]
 1 1, 1 (1) : 1
