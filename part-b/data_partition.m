@@ -1,10 +1,14 @@
-L = size(acs323assignmentdata, 1);
+% Normalise Data to [0, 1]
+[normalised_data, settings] = mapminmax(acs323assignmentdata', 0, 1);
+normalised_data = normalised_data';
+
+L = size(normalised_data, 1);
 
 % Seed for Reproducibility
 rng(42); 
 
 shuffled_indices = randperm(L);
-shuffled_data = acs323assignmentdata(shuffled_indices, :);
+shuffled_data = normalised_data(shuffled_indices, :);
 
 tr_limit = floor(2/3 * L);
 
