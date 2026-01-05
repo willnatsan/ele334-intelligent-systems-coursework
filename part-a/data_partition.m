@@ -16,4 +16,4 @@ fprintf('Total samples: %d\n', L);
 fprintf('Training samples: %d\n', size(trdata, 1));
 fprintf('Checking samples: %d\n', size(ckdata, 1));
 
-save('data_file.mat', 'trdata', 'ckdata');
+save('santoso_part_A_section_d.mat', 'trdata', 'ckdata');
